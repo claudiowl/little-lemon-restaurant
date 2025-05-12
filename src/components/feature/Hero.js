@@ -1,9 +1,7 @@
-import styles from './ui.module.css';
+import styles from './feature.module.css';
 import Button from '../common/Button';
 import restaurant from '../../assets/images/restauranfood.jpg';
 import { useNavigate } from 'react-router-dom';
-
-
 
 const Hero = () => {
 

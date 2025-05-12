@@ -1,6 +1,6 @@
 import { menuItems } from '../../data/menuItems';
 import MenuCard from './MenuCard';
-import style from './ui.module.css';
+import style from './feature.module.css';
 import Button from '../common/Button';
 import { useNavigate } from 'react-router-dom';
 

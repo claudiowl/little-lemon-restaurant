@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import style from './ui.module.css';
+import style from './feature.module.css';
 import Button from '../common/Button';
 
 const BookingForm = ({ availableTimes, updateTimes, submitForm }) => {
@@ -21,11 +21,11 @@ const BookingForm = ({ availableTimes, updateTimes, submitForm }) => {
     const { id, value } = e.target;
 
     if (id === 'date') {
-      await updateTimes(value); // Passes date string
+      await updateTimes(value);
       setFormData(prev => ({
         ...prev,
         [id]: value,
-        time: availableTimes[0] || '' // Set to first available time
+        time: availableTimes[0] || ''
       }));
     } else {
       setFormData(prev => ({

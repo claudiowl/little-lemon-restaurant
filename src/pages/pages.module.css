@@ -1,0 +1,68 @@
+.grid-container {
+    display: grid;
+    gap: 1.5rem;
+    margin: 0 auto;
+}
+
+.booking-page {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.booking-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.booking-intro {
+    padding: 1rem;
+    background: #EDEFEE;
+    border-radius: 8px;
+}
+
+.maintenanceContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 2rem;
+    background-color: #f8f8f8;
+}
+
+.maintenanceContent {
+    text-align: center;
+    max-width: 600px;
+    padding: 2rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    color: #495E57;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.message {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.contact {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .booking-content {
+        grid-template-columns: 1fr;
+    }
+}

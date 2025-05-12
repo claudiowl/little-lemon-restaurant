@@ -1,12 +1,12 @@
 import Button from '../common/Button';
-import style from './ui.module.css';
+import style from './feature.module.css';
 import { useNavigate } from 'react-router-dom';
 
 const MenuCard = ({ title, price, description, image }) => {
   const navigate = useNavigate();
 
   const handleMenuClick = () => {
-    navigate('/reservations');
+    navigate('/menu');
   };
 
         return (

@@ -1,25 +1,25 @@
 import { useOutletContext } from "react-router-dom";
-import BookingForm from "../components/ui/BookingForm";
+import BookingForm from "../components/feature/BookingForm";
+import style from "./pages.module.css";
 
-export const Bookingpage = () => {
+export const BookingPage = () => {
   const { availableTimes, updateTimes, submitForm } = useOutletContext();
 
   return (
-    <section className="booking-page">
+    <section className={style["booking-page"]}>
       <h1>Reserve a Table</h1>
-      <div className="booking-content">
+      <div className={style["booking-content"]}>
         {/* Optional description or image */}
-        <div className="booking-intro">
+        <div className={style["booking-intro"]}>
           <p>Book your table at Little Lemon</p>
         </div>
-        {/* Integrated BookingForm with props */}
         <BookingForm
           availableTimes={availableTimes}
           updateTimes={updateTimes}
-          submitForm={submitForm}  // This must be provided
+          submitForm={submitForm}
         />
       </div>
     </section>
   );
 }
-export default Bookingpage;
+export default BookingPage;

@@ -25,15 +25,18 @@
     background-color:transparent;
     color: var(--color-highlight-dark);
   }
+
+  .btn--secondary:hover:not(.btn--disabled) {
+    background-color: var(--color-complement-secondary);
+  }
+  .btn--link:hover:not(.btn--disabled) {
+    background-color: var(--color-highlight-link);
+  } 
   /* .btn--primary:hover:not(.btn--disabled) {
     background-color: #0056b3;
   }
-  
- 
-  .btn--secondary:hover:not(.btn--disabled) {
-    background-color: #5a6268;
-  }
-  
+
+/
   .btn--danger {
     background-color: #dc3545;
     color: white;

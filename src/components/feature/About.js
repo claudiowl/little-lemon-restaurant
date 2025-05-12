@@ -1,11 +1,11 @@
-import style from './ui.module.css';
+import style from './feature.module.css';
 import  aboutImage1  from '../../assets/images/restauranfood.jpg';
 import  aboutImage2  from '../../assets/images/Mario and Adrian b.jpg';
 
 
 const About = () => {
     return (
-      <section className={style["about-section"]}>
+      <section id="about-section" className={style["about-section"]}>
         <div className={style["about-content"]}>
           <div className={style["about-text"]}>
             <h2>Little Lemon</h2>

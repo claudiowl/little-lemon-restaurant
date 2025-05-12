@@ -1,4 +1,4 @@
-import style from './ui.module.css';
+import style from './feature.module.css';
 
 // components/Testimonials/Testimonials.jsx
 const Testimonials = () => {

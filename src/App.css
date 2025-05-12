@@ -14,40 +14,7 @@ h1, h2, h3 {
   min-height: 100vh;
 }
 
-/* Shared Grid Utilities */
-.grid-container {
-  display: grid;
-  gap: 1.5rem;
-  margin: 0 auto;
-}
 
-/* BOOKING PAGE*/
-
-/* pages/BookingPage.css */
-.booking-page {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-.booking-content {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 3rem;
-  align-items: start;
-}
-
-.booking-intro {
-  padding: 1rem;
-  background: #EDEFEE;
-  border-radius: 8px;
-}
-
-@media (max-width: 768px) {
-  .booking-content {
-    grid-template-columns: 1fr;
-  }
-}
 
 :root {
   --color-base-primary: #495E57;
@@ -55,6 +22,7 @@ h1, h2, h3 {
   --color-complement-primary: #EE9972;
   --color-complement-secondary: #FBDADD;
   --color-highlight-light: #EDEFEE;
+  --color-highlight-link: #ffffff;
   --color-highlight-dark: #333333;
 }
 
@@ -65,7 +33,7 @@ h1, h2, h3 {
 }
 
 button:focus, input:focus, select:focus {
-  outline: 2px solid #1a759f;
+  outline: 1px solid #EE9972;
   outline-offset: 2px;
 }
 
