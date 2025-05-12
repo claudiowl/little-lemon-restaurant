@@ -1,0 +1,28 @@
+import style from './ui.module.css';
+
+// components/Testimonials/Testimonials.jsx
+const Testimonials = () => {
+    const testimonials = [
+      { id: 1, rating: "★★★★★", name: "Home", comment: "Restaurant review text" },
+      { id: 2, rating: "★★★★★", name: "Home", comment: "Restaurant review text" },
+      { id: 3, rating: "★★★★★", name: "Home", comment: "Restaurant review text" },
+      { id: 4, rating: "★★★★★", name: "Home", comment: "Restaurant review text" },
+    ];
+
+    return (
+      <section className={style["testimonials-section"]}>
+        <h2>Testimonials</h2>
+        <div className={style["testimonials-grid"]}>
+          {testimonials.map(testimonial => (
+            <div key={testimonial.id} className={style["testimonial-card"]}>
+              <div className={style["rating"]}>{testimonial.rating}</div>
+              <div className={style["name"]}>{testimonial.name}</div>
+              <p>{testimonial.comment}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    );
+  };
+
+  export default Testimonials;

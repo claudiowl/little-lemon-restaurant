@@ -1,0 +1,50 @@
+/* src/components/common/Button.css */
+.btn {
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 200px;
+    height: 60px;
+    font-weight: bold;
+    font-family: 'karla', Arial, sans-serif;
+    font-size: 1.2rem;
+  }
+  
+  /* Variantes */
+  .btn--primary {
+    background-color:var(--color-base-primary);
+    color: white;
+
+  }
+  .btn--secondary {
+    background-color:var(--color-base-secondary);
+    color: var(--color-highlight-dark);
+  }
+  .btn--link {
+    background-color:transparent;
+    color: var(--color-highlight-dark);
+  }
+  /* .btn--primary:hover:not(.btn--disabled) {
+    background-color: #0056b3;
+  }
+  
+ 
+  .btn--secondary:hover:not(.btn--disabled) {
+    background-color: #5a6268;
+  }
+  
+  .btn--danger {
+    background-color: #dc3545;
+    color: white;
+  }
+  .btn--danger:hover:not(.btn--disabled) {
+    background-color: #c82333;
+  }
+  
+  /* Estado deshabilitado */
+  .btn--disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+   /* */ 

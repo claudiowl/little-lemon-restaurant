@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+body {
+  font-family: 'Karla', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3 {
+  font-family: 'Markazi Text', serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* Base Grid Layout for the Entire App */
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header, Main, Footer */
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Shared Grid Utilities */
+.grid-container {
+  display: grid;
+  gap: 1.5rem;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* BOOKING PAGE*/
+
+/* pages/BookingPage.css */
+.booking-page {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.booking-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.booking-intro {
+  padding: 1rem;
+  background: #EDEFEE;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .booking-content {
+    grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+:root {
+  --color-base-primary: #495E57;
+  --color-base-secondary: #F4CE14;
+  --color-complement-primary: #EE9972;
+  --color-complement-secondary: #FBDADD;
+  --color-highlight-light: #EDEFEE;
+  --color-highlight-dark: #333333;
+}
+
+/* Ensure focus states are visible */
+[aria-required="true"] + label::after {
+  content: " *";
+  color: #e63946;
+}
+
+button:focus, input:focus, select:focus {
+  outline: 2px solid #1a759f;
+  outline-offset: 2px;
+}
+
+[aria-busy="true"] {
+  opacity: 0.8;
+  cursor: progress;
 }
