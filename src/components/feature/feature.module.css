@@ -4,8 +4,8 @@
 }
 
 .hero {
-  margin: 0 auto; /* Centers the container */
-  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 2rem;
@@ -20,7 +20,7 @@
 }
 
 .hero-text h1 {
-  font-family: 'Markazi Text', serif; /* Or your heading font */
+  font-family: 'Markazi Text', serif;
   font-size: 3.5rem;
   font-weight: 500;
   color: var(--color-base-secondary);
@@ -59,10 +59,7 @@
     }
   }
 
-/*
-MENU CARD
-*/
-/* MenuCard.css */
+
 .menu-card {
   display: flex;
   flex-direction: column;
@@ -91,6 +88,7 @@ MENU CARD
 .price {
   color: #EE9972;
   font-weight: bold;
+  padding: 20px;
 }
 
 .order-btn {
@@ -125,8 +123,6 @@ MENU CARD
   gap: 2px;
 }
 
-/* Testiomnials*/
-/* components/Testimonials/Testimonials.css */
 .testimonials-section {
   background-color: #f8f8f8;
   padding: 4rem 2rem;
@@ -176,9 +172,7 @@ MENU CARD
   }
 }
 
-/* about us */
-/* components/AboutUs/AboutUs.css */
-/* components/About/About.css */
+
 .about-section {
   background-color: white;
   padding: 4rem 2rem;
@@ -243,24 +237,12 @@ MENU CARD
   right: 0;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .about-content {
-    grid-template-columns: 1fr;
-  }
 
-  .about-images {
-    height: 300px;
-    margin-top: 2rem;
-  }
-}
 
-/*BookingForm*/
-/* components/BookingForm.css */
 .booking-form {
   display: grid;
   max-width: 400px;
-  gap: 1.5rem;
+  gap: 1.25rem;
   padding: 2rem;
   background: white;
   border-radius: 16px;
@@ -271,7 +253,14 @@ MENU CARD
 .booking-form h2 {
   color: #495E57;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.booking-form p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 1.5rem;
 }
 
 .form-group {
@@ -280,47 +269,41 @@ MENU CARD
 }
 
 .form-group label {
-  font-weight: bold;
+  font-weight: 500;
   color: #333;
+  font-size: 0.95rem;
 }
 
 .form-group input,
 .form-group select {
-  padding: 0.8rem;
+  padding: 0.75rem;
   border: 1px solid #ddd;
   border-radius: 8px;
   font-family: inherit;
   font-size: 1rem;
+  background: #fff;
 }
 
 .form-group input:focus,
 .form-group select:focus {
   outline: 2px solid #F4CE14;
-}
-
-.submit-btn {
-  background: #F4CE14;
-  color: #333;
-  border: none;
-  padding: 1rem;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.submit-btn:hover {
-  background: #e6c210;
-}
-
-.submit-btn:disabled {
-  background: #cccccc;
-  cursor: not-allowed;
+  border-color: transparent;
 }
 
 @media (max-width: 480px) {
   .booking-form {
     padding: 1.5rem;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-images {
+    height: 300px;
+    margin-top: 2rem;
   }
 }

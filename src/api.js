@@ -25,5 +25,5 @@ export const fetchAPI = function(date) {
   
   export const submitAPI = function(formData) {
     console.log('Form submitted:', formData);
-    return Promise.resolve(true); // Always return true for the mock
+    return Promise.resolve(true);
   };

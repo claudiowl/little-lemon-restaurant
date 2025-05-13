@@ -37,14 +37,17 @@ const BookingForm = ({ availableTimes, updateTimes, submitForm }) => {
 
 
   const handleSubmit = async (e) => {
-      e.preventDefault();
-      setIsSubmitting(true);
-      await submitForm(formData);
-      setIsSubmitting(false);
+    e.preventDefault();
+    setIsSubmitting(true);
+    await submitForm(formData);
+    setIsSubmitting(false);
   };
 
   return (
     <form onSubmit={handleSubmit} className={style["booking-form"]}>
+
+      <h2>Reserve a Table</h2>
+      <p>Book your table at Little Lemon</p>
       <div className={style["form-group"]}>
         <label htmlFor="date">Choose date</label>
         <input

@@ -7,14 +7,11 @@ h1, h2, h3 {
   font-family: 'Markazi Text', serif;
 }
 
-/* Base Grid Layout for the Entire App */
 .app {
   display: grid;
   grid-template-rows: auto 1fr auto; /* Header, Main, Footer */
   min-height: 100vh;
 }
-
-
 
 :root {
   --color-base-primary: #495E57;
@@ -26,7 +23,7 @@ h1, h2, h3 {
   --color-highlight-dark: #333333;
 }
 
-/* Ensure focus states are visible */
+
 [aria-required="true"] + label::after {
   content: " *";
   color: #e63946;

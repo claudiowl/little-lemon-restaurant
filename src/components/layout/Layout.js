@@ -25,7 +25,7 @@ export default function Layout() {
       const times = await fetchAPI(today);
       dispatch({ type: 'INITIALIZE_TIMES', times });
     } catch (error) {
-      console.error('Error initializing times:', error);
+   alert('Error initializing times:', error);
       dispatch({ type: 'INITIALIZE_TIMES', times: ['17:00', '17:30', '19:00'] });
     }
   };
@@ -36,7 +36,7 @@ export default function Layout() {
       const times = await fetchAPI(date);
       dispatch({ type: 'UPDATE_TIMES', times });
     } catch (error) {
-      console.error('Error updating times:', error);
+      alert('Error updating times:', error);
     }
   };
 
@@ -49,7 +49,6 @@ export default function Layout() {
         alert('Booking submission failed. Please try again.');
       }
     } catch (error) {
-      console.error('Submission error:', error);
       alert('An error occurred. Please try again later.');
     }
   };

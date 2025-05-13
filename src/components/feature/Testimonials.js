@@ -3,10 +3,10 @@ import style from './feature.module.css';
 // components/Testimonials/Testimonials.jsx
 const Testimonials = () => {
     const testimonials = [
-      { id: 1, rating: "★★★★★", name: "Home", comment: "Restaurant review text" },
-      { id: 2, rating: "★★★★★", name: "Home", comment: "Restaurant review text" },
-      { id: 3, rating: "★★★★★", name: "Home", comment: "Restaurant review text" },
-      { id: 4, rating: "★★★★★", name: "Home", comment: "Restaurant review text" },
+      { id: 1, rating: "★★★★★", name: "Juan", comment: "Sure I'll go again." },
+      { id: 2, rating: "★★★★★", name: "Emilia", comment: "I love it." },
+      { id: 3, rating: "★★★★★", name: "Ave", comment: "The best staff!" },
+      { id: 4, rating: "★★★★★", name: "Jhon", comment: "Nice!" },
     ];
 
     return (
